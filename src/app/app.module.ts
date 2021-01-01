@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component'; 
 import { OdersModule } from './oders/oders.module';
 import { ProductsModule } from './products/products.module';
+import { SiteLayoutModule } from './site-layout/site-layout.module';
 @NgModule({
   declarations: [
     AppComponent    
@@ -12,7 +13,8 @@ import { ProductsModule } from './products/products.module';
     BrowserModule,
     AppRoutingModule,
     OdersModule,
-    ProductsModule
+    ProductsModule,
+    SiteLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
