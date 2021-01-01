@@ -4,9 +4,7 @@ import { ListOrderComponent } from './list-order/list-order.component';
 
 const routes: Routes = [
   {
-    path: 'order',
-    loadChildren: () => import ('./oders.module').then(ma=> ma.OdersModule),
-    component: ListOrderComponent,
+    path: '', component: ListOrderComponent,
   }
 ];
 
