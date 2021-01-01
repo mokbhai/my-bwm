@@ -8,6 +8,10 @@ import { ListOrderComponent } from './list-order/list-order.component';
   declarations: [ListOrderComponent],
   imports: [
     CommonModule,
+    
+  ],
+  exports: [
+    ListOrderComponent
   ]
 })
 export class OdersModule {}
