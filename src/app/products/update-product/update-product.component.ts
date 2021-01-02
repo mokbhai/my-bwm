@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-update-product',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./update-product.component.scss']
 })
 export class UpdateProductComponent implements OnInit {
-
-  constructor() { }
+  ProductID = 0;
+  cat = 1;
+  constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.activatedRoute.params.subscribe(data => {
+      this.ProductID = data.id;
+
+    }),
+      this.activatedRoute.params.subscribe(data => {
+        this.cat = data.id;
+
+      })
   }
 
 }

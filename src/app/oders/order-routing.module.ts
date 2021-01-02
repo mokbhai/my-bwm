@@ -4,7 +4,7 @@ import { ListOrderComponent } from './list-order/list-order.component';
 
 const routes: Routes = [
   {
-    path: '', component: ListOrderComponent,
+    path: 'orders', component: ListOrderComponent,
   }
 ];
 
