@@ -12,11 +12,11 @@ import { ViewSingleProductComponent } from './view-single-product/view-single-pr
 const routes: Routes = [
   { path: 'all', component: ProductsComponent },
   { path: 'deleteProd', component: DeleteProductComponent },
-  { path: 'updateProd/:id/:cat', component: UpdateProductComponent },
+  { path: 'updateProd/:id?:cat', component: UpdateProductComponent },
   { path: 'Products', component: ViewAllProductComponent },
   { path: 'ProdInfo/:id?:cat', component: ViewSingleProductComponent },
   { path: 'add', component: AddProductComponent },
-  { path: 'view/:category', component: ViewProductByCatComponent },
+  { path: 'view/:id?:cat=', component: ViewProductByCatComponent },
   { path: 'view/date', component: ViewProductByDateComponent },
 
 ];

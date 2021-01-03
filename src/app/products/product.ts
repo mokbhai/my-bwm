@@ -8,6 +8,7 @@ export interface Product {
     productImg: string;
     isAvalable: boolean;
     colour: string;
-    review: string;
-
+    review: number;
+    venderName: string;
+    waranty: string
 }

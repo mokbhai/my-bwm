@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { from,Observable } from 'rxjs';
+import { from, Observable } from 'rxjs';
 import { Cat } from '../site-layout/cat';
 import { Product } from './product';
 @Injectable({
@@ -13,8 +13,8 @@ export class ProductService {
     const baseUrl = "http://localhost:3000/Products";
     return this.httpClient.post<Product>(baseUrl, productBody);
   }
-  viewProduct(productID:Observable<Product>){
-    const baseUrl = "http://localhost:3000/Products" + productID;
+  viewProduct():Observable<Product>{
+    const baseUrl = "http://localhost:3000/Products";
     return this.httpClient.get<Product>(baseUrl);
   }
   updateProduct(productBody:Observable<Product>, productID:Observable<Product>) {

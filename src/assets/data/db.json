@@ -8,9 +8,42 @@
         { "id": 1, "catName": "Cloths" },
         { "id": 4, "catName": "Men" },
         { "id": 2, "catName": "Women" },
-        { "id": 3, "catName": "kids" }
+        { "id": 3, "catName": "kids" },
+        { "id": 5, "catName": "Cello Tapes" },
+        { "id": 6, "catName": "Stationary" }
         ],
     "profile": {
     "name": "typicode"
-    }
-  }
+    },
+"Products": [
+{
+    "id":1,
+    "productName": "Small Cello Tape",
+    "cat_id": 5,
+    "decription": "dsaafdgsvv osap",
+    "price": 70,
+    "isAvalabe": true,
+    "rating": 8.1,
+    "productImg": "./assets/images/p1.jpg",
+    "colour": "Transparent",
+    "review": 23,
+    "venderName": "Jain Opticals",
+    "waranty": 1
+},
+{
+    
+    "id":2,
+    "productName": "Fevicole",
+    "cat_id": 6,
+    "decription": "100g ask osap",
+    "price": 110,
+    "isAvalabe": true,
+    "rating": 9.2,
+    "productImg": "./assets/images/p2.jpg",
+    "colour": "pi",
+    "review": 132,
+    "venderName": "Jain Opticals",
+    "waranty": 0
+}
+]
+}

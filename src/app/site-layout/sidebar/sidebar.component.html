@@ -1,4 +1,4 @@
 <h1 class="my-4">BWM</h1>
-<div class="list-group">
-  <a href="#" class="list-group-item" *ngFor="let catg of catag">{{catg.catName}}</a>
+<div class="list-group" *ngFor="let catg of catag">
+  <a href="view/{{catg.id}}?cat={{catg.catName}}" class="list-group-item">{{catg.catName}}</a>
 </div>
