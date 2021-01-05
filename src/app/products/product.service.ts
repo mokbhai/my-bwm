@@ -7,6 +7,7 @@ import { Product } from './product';
   providedIn: 'root'
 })
 export class ProductService {
+  params: any;
 
   constructor(private httpClient: HttpClient) { }
   createProduct(productBody:Observable<Product>){
@@ -26,11 +27,11 @@ export class ProductService {
     return this.httpClient.delete<Product>(baseUrl);
   }
   serchCatProduct(catID:Observable<Product>) {
-    const baseUrl = "http://localhost:3000/cat=" + catID;
+    const baseUrl = "http://localhost:3000/Products?cat=" + catID;
     return this.httpClient.get<Product>(baseUrl);
   }
   serchDateProduct(dateParams:Observable<Product>) {
-    const baseUrl = "http://localhost:3000/date=" + dateParams;
+    const baseUrl = "http://localhost:3000/date" + dateParams;
     return this.httpClient.get<Product>(baseUrl);
   }
   getCat(){

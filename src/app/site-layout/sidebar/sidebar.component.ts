@@ -8,12 +8,12 @@ import { Cat } from '../cat';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
-  catag: any;
+  catList: any;
   constructor(private productsService: ProductService) { }
 
   ngOnInit(): void {
     this.productsService.getCat().subscribe(data=>{
-      this.catag = data;
+      this.catList= data;
     })
   }
 

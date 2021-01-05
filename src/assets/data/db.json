@@ -19,7 +19,7 @@
 {
     "id":1,
     "productName": "Small Cello Tape",
-    "cat_id": 5,
+    "catId": 5,
     "decription": "dsaafdgsvv osap",
     "price": 70,
     "isAvalabe": true,
@@ -34,7 +34,7 @@
     
     "id":2,
     "productName": "Fevicole",
-    "cat_id": 6,
+    "catId": 6,
     "decription": "100g ask osap",
     "price": 110,
     "isAvalabe": true,
